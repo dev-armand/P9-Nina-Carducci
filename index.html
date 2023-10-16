@@ -33,9 +33,9 @@
 	<script src="./assets/scripts.js"></script>
 </head>
 <body>
-<div aria-label="navigation" class="top-header">
+<header aria-label="header" class="top-header">
 	<h1 class="name">Nina Carducci - Photographe professionnel</h1>
-	<div class="nav">   
+	<nav aria-label="navigation" class="nav">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
@@ -43,38 +43,37 @@
 			<li><a href="#contact">Contact</a></li>
 			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="icone instagram"></a></li>
 		</ul>
-	</div>
-</div>
-<div aria-label="header" id="header">
-
-	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	</nav>
+</header>
+<main aria-label="main">
+<div id="carousel">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-RESIZE.jpg" class="d-block w-100" alt="image de ryoji iwata traversant un passage piéton ">
+				</div>
+				<div class="carousel-item">
+					<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-RESIZE.jpg" class="d-block w-100" alt="images de jeunes en concert">
+				</div>
+				<div class="carousel-item">
+					<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-RESIZE.jpg" class="d-block w-100" alt="image de mariés qui s'embrasse">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
 		</div>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-RESIZE.jpg" class="d-block w-100" alt="image de ryoji iwata traversant un passage piéton ">
-			</div>
-			<div class="carousel-item">
-				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-RESIZE.jpg" class="d-block w-100" alt="images de jeunes en concert">
-			</div>
-			<div class="carousel-item">
-				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-RESIZE.jpg" class="d-block w-100" alt="image de mariés qui s'embrasse">
-			</div>
-		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button>
-	</div>
 </div>
-<div aria-label="main">
 <div id="about">
 	<div class="picture left">
 		<img src="./assets/images/nina-RESIZE.png" alt="Nina Carducci">
@@ -177,7 +176,7 @@
 		</div>
 	</div>
 </div>
-</div>
+</main>
 <script type="application/ld+json">
 
 	{
