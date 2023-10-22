@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
     $('.gallery').mauGallery({
         columns: {
@@ -13,3 +15,4 @@ $(document).ready(function() {
         tagsPosition: 'top'
     });
 });
+
