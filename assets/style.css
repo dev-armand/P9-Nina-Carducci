@@ -365,3 +365,7 @@ input[type="submit"] {
 .modal-body img {
 	width: 500px;
 }
+
+.nav-link {
+	cursor: pointer;
+}
