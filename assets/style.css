@@ -368,4 +368,5 @@ input[type="submit"] {
 
 .nav-link {
 	cursor: pointer;
+	padding: 0.4rem;
 }
